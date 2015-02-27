@@ -14,7 +14,12 @@ class RomanNumerals
                     4 => "IV", 
                     1 => "I"}
 
-  def self.convert(number)
+  def self.convert(arg)
+    return self.to_roman(arg) if arg.class == Fixnum
+    return self.to_arabic(arg) if arg.class == String
+  end
+
+  def self.to_roman(number)
     roman_numeral = ""
     ROMAN_NUMERALS.each do |k, v|
       (number / k).times { roman_numeral << v; number -= k }
@@ -22,7 +27,7 @@ class RomanNumerals
     roman_numeral
   end
 
-  def self.reconvert(numeral)
+  def self.to_arabic(numeral)
     number = 0
     ROMAN_NUMERALS.invert.each do |k, v|
       while (numeral.index(k) == 0)

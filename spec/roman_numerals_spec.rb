@@ -27,27 +27,27 @@ describe RomanNumerals do
   end
 
   it "can convert I to 1" do
-    expect(RomanNumerals.reconvert("I")).to eq(1)
+    expect(RomanNumerals.convert("I")).to eq(1)
   end
 
   it "can convert V to 5" do
-    expect(RomanNumerals.reconvert("V")).to eq(5)
+    expect(RomanNumerals.convert("V")).to eq(5)
   end
 
   it "can convert X to 10" do
-    expect(RomanNumerals.reconvert("X")).to eq(10)
+    expect(RomanNumerals.convert("X")).to eq(10)
   end
 
   it "can convert XXXV to 35" do
-    expect(RomanNumerals.reconvert("XXXV")).to eq(35)
+    expect(RomanNumerals.convert("XXXV")).to eq(35)
   end
   
   it "can convert CMXCVI to 996" do
-    expect(RomanNumerals.reconvert("CMXCVI")).to eq(996)
+    expect(RomanNumerals.convert("CMXCVI")).to eq(996)
   end
 
   it "can convert MMCCCXCV to 2395" do
-    expect(RomanNumerals.reconvert("MMCCCXCV")).to eq(2395)
+    expect(RomanNumerals.convert("MMCCCXCV")).to eq(2395)
   end
 
 end
