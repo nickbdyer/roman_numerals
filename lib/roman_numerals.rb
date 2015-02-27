@@ -23,7 +23,7 @@ class RomanNumerals
   end
 
   def self.reconvert(numeral)
-    1
+    ROMAN_NUMERALS.invert[numeral]
   end
 
 end
