@@ -14,5 +14,9 @@ describe RomanNumerals do
     expect(RomanNumerals.convert(10)).to eq("X")
   end
 
+  it "can convert 35 to IX" do
+    expect(RomanNumerals.convert(35)).to eq("XXXV")
+  end
+
 end
 
