@@ -38,5 +38,8 @@ describe RomanNumerals do
     expect(RomanNumerals.reconvert("X")).to eq(10)
   end
 
+  it "can convert XXXV to 35" do
+    expect(RomanNumerals.reconvert("XXXV")).to eq(35)
+  end
 end
 

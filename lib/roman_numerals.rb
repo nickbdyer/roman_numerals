@@ -23,7 +23,11 @@ class RomanNumerals
   end
 
   def self.reconvert(numeral)
-    ROMAN_NUMERALS.invert[numeral]
+    number = 0
+    numeral.split(//).each do |letter|
+      number = number + ROMAN_NUMERALS.invert[letter]
+    end
+    number
   end
 
 end
