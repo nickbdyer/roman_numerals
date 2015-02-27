@@ -41,5 +41,10 @@ describe RomanNumerals do
   it "can convert XXXV to 35" do
     expect(RomanNumerals.reconvert("XXXV")).to eq(35)
   end
+  
+  it "can convert CMXCVI to 996" do
+    expect(RomanNumerals.reconvert("CMXCVI")).to eq(996)
+  end
+
 end
 
