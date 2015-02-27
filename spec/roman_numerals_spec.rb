@@ -22,5 +22,9 @@ describe RomanNumerals do
     expect(RomanNumerals.convert(996)).to eq("CMXCVI")
   end
 
+  it "can convert 2395 to MMCCCXCV" do
+    expect(RomanNumerals.convert(2395)).to eq("MMCCCXCV")
+  end
+
 end
 
