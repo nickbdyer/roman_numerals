@@ -26,7 +26,7 @@ class RomanNumerals
     number = 0
     ROMAN_NUMERALS.invert.each do |k, v|
       while (numeral.index(k) == 0)
-        number += ROMAN_NUMERALS.invert[k]       
+        number += v       
         numeral.slice!(k)
       end
     end
