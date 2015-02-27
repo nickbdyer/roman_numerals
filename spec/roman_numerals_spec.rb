@@ -10,5 +10,9 @@ describe RomanNumerals do
     expect(RomanNumerals.convert(5)).to eq("V")
   end
 
+  it "can convert 10 to X" do
+    expect(RomanNumerals.convert(10)).to eq("X")
+  end
+
 end
 
