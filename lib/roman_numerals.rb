@@ -22,4 +22,8 @@ class RomanNumerals
     roman_numeral
   end
 
+  def self.reconvert(numeral)
+    1
+  end
+
 end

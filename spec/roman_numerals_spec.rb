@@ -26,5 +26,13 @@ describe RomanNumerals do
     expect(RomanNumerals.convert(2395)).to eq("MMCCCXCV")
   end
 
+  it "can convert I to 1" do
+    expect(RomanNumerals.reconvert("I")).to eq(1)
+  end
+
+  it "can convert V to 5" do
+    expect(RomanNumerals.reconvert("V")).to eq(5)
+  end
+
 end
 
